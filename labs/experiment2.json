@@ -1,0 +1,541 @@
+[
+  {
+    "question": "What is the primary core platform of the Arduino board?",
+    "options": [
+      "A standalone graphics processing unit",
+      "A microcontroller, input/output pins, and a programming interface",
+      "An analog signal generator without digital capabilities",
+      "A dedicated wireless router module"
+    ],
+    "answer": 1,
+    "explanation": "Arduino is an open-source platform. Its hardware core fundamentally consists of a microcontroller, I/O pins, and a interface used for programming."
+  },
+  {
+    "question": "Which Arduino board model is primarily focused on and used in this laboratory course?",
+    "options": [
+      "Arduino Mega",
+      "Arduino Uno",
+      "Arduino Nano",
+      "Arduino Leonardo"
+    ],
+    "answer": 1,
+    "explanation": "The document specifies that the Arduino Uno board is sufficient for performing mid-level projects, making it the primary focus of this course."
+  },
+  {
+    "question": "What type of signals do the digital pins on the Arduino Uno support?",
+    "options": [
+      "Continuous analog voltages from 0V to 12V",
+      "Digital signals in either HIGH (5V) or LOW (0V) states",
+      "Pulse-width modulation signals exclusively",
+      "AC differential voltage signals"
+    ],
+    "answer": 1,
+    "explanation": "Digital pins process discrete digital signals representing logic HIGH (5V) or logic LOW (0V)."
+  },
+  {
+    "question": "What is the input voltage range and resolution for Analog Pins A0 to A5 on the Arduino Uno?",
+    "options": [
+      "0 to 3.3V with 8-bit resolution (0-255)",
+      "0 to 5V with 10-bit resolution (0-1023)",
+      "0 to 10V with 12-bit resolution (0-4095)",
+      "-5V to +5V with 16-bit resolution"
+    ],
+    "answer": 1,
+    "explanation": "Analog inputs read voltage levels between 0 and 5 volts and convert them into discrete values from 0 to 1023 using the internal 10-bit Analog-to-Digital Converter (ADC)."
+  },
+  {
+    "question": "Which specific pins on the Arduino Uno are assigned for UART serial communication?",
+    "options": [
+      "Pins A4 and A5",
+      "Pins 2 and 3",
+      "Pins 0 (RX) and 1 (TX)",
+      "Pins 11 and 12"
+    ],
+    "answer": 2,
+    "explanation": "Pin 0 serves as Receive (RX) and Pin 1 serves as Transmit (TX) for UART serial communication with external hardware or computers."
+  },
+  {
+    "question": "Which hardware applications are explicitly named as examples for Arduino implementation?",
+    "options": [
+      "Home automation, robotics, IoT, and environmental monitoring",
+      "High-performance quantum computing",
+      "Direct nuclear reactor control exclusively",
+      "Mainframe server rack power management only"
+    ],
+    "answer": 0,
+    "explanation": "The document highlights home automation, robotics, IoT, environmental monitoring, security systems, weather monitoring, smart agriculture, and healthcare monitoring."
+  },
+  {
+    "question": "When does the setup() function execute during an Arduino sketch lifecycle?",
+    "options": [
+      "It loops indefinitely while the board is powered",
+      "It runs once when the board is powered on or reset",
+      "It runs only when serial communication is triggered",
+      "It executes immediately before board shutdown"
+    ],
+    "answer": 1,
+    "explanation": "setup() is called exactly once upon boot or reset. It initializes pin modes, variables, and serial communication."
+  },
+  {
+    "question": "What is the primary operational behavior of the loop() function?",
+    "options": [
+      "It executes once and halts execution",
+      "It executes repeatedly as long as the Arduino is powered",
+      "It runs once every 1000 milliseconds automatically",
+      "It executes only when hardware interrupts occur"
+    ],
+    "answer": 1,
+    "explanation": "loop() contains the primary control logic and executes continuously in a loop after setup() completes until power is removed or reset occurs."
+  },
+  {
+    "question": "How does the computer physically establish serial communication with the Arduino board in the IDE?",
+    "options": [
+      "Through a direct Ethernet port connection",
+      "Via a USB-Serial adapter over a serial port",
+      "Through an I2C bus bridge",
+      "Via an SPI wireless interface"
+    ],
+    "answer": 1,
+    "explanation": "The computer communicates with the microcontroller over a virtual serial port created by an onboard USB-to-Serial converter adapter."
+  },
+  {
+    "question": "Under which Arduino IDE menu path do you confirm and select the target board model?",
+    "options": [
+      "File -> Preferences",
+      "Tools -> Board",
+      "Sketch -> Include Library",
+      "Edit -> Select Board"
+    ],
+    "answer": 1,
+    "explanation": "You must navigate to Tools -> Board in the Arduino IDE to select the correct board profile (e.g., Arduino Uno)."
+  },
+  {
+    "question": "In basic microcontroller operations, what does the term 'Toggling' mean?",
+    "options": [
+      "Reading continuous analog values from a pin",
+      "Alternating an output device (e.g., LED) ON and OFF repeatedly",
+      "Converting digital signals to analog voltages",
+      "Scanning I2C addresses sequentially"
+    ],
+    "answer": 1,
+    "explanation": "Toggling refers to switching an output pin state between HIGH (ON) and LOW (OFF) back and forth."
+  },
+  {
+    "question": "What is the exact purpose of executing pinMode(2, INPUT); in Arduino C++?",
+    "options": [
+      "It provides 5V power output to digital pin 2",
+      "It configures pin 2 as a digital input to read external component states",
+      "It connects pin 2 to an internal 50k pull-up resistor",
+      "It enables analog voltage conversion on digital pin 2"
+    ],
+    "answer": 1,
+    "explanation": "pinMode(pin, INPUT) configures the specified digital pin as an input so the microcontroller can sample signals from buttons or digital sensors."
+  },
+  {
+    "question": "What operation is executed by the instruction pinMode(13, OUTPUT);?",
+    "options": [
+      "Configures pin 13 to send digital output signals to external components",
+      "Sets pin 13 as a high-impedance analog input pin",
+      "Disables digital pin 13 from drawing current",
+      "Triggers an internal reset via pin 13"
+    ],
+    "answer": 0,
+    "explanation": "pinMode(pin, OUTPUT) sets the pin mode to output, permitting the Arduino to drive LEDs, relays, motors, or other actuators."
+  },
+  {
+    "question": "Which character combination is used to denote a single-line comment in Arduino C++?",
+    "options": [
+      "/*",
+      "//",
+      "#",
+      "<!--"
+    ],
+    "answer": 1,
+    "explanation": "Double forward slashes '//' mark the remainder of that line as a comment ignored by the compiler."
+  },
+  {
+    "question": "What exact time delay is produced by calling delay(1000);?",
+    "options": [
+      "100 microseconds",
+      "1000 milliseconds (1 second)",
+      "10 seconds",
+      "1000 seconds"
+    ],
+    "answer": 1,
+    "explanation": "The parameter passed to delay() is measured in milliseconds. 1000 ms equals 1 second."
+  },
+  {
+    "question": "What electrical voltage level is driven to a pin when calling digitalWrite(pin, LOW);?",
+    "options": [
+      "5V or supply voltage",
+      "2.5V reference voltage",
+      "0V (Ground)",
+      "High-impedance floating state"
+    ],
+    "answer": 2,
+    "explanation": "digitalWrite(pin, LOW) connects the pin internally to ground (0V)."
+  },
+  {
+    "question": "Where must the ARDUINO.LIB file be stored for Proteus 8 Professional to recognize Arduino hardware?",
+    "options": [
+      "Proteus 8 Professional\\BIN",
+      "Proteus 8 Professional\\Data\\LIBRARY",
+      "Program Files\\Arduino\\libraries",
+      "Windows\\System32"
+    ],
+    "answer": 1,
+    "explanation": "The library file ARDUINO.LIB must be copied directly into the 'LIBRARY' folder located inside the Proteus 'Data' directory."
+  },
+  {
+    "question": "Which compiled file format generated by Arduino IDE is required to run Proteus hardware simulations?",
+    "options": [
+      ".INO file",
+      ".HEX file",
+      ".CPP file",
+      ".ELF file"
+    ],
+    "answer": 1,
+    "explanation": "Proteus requires the compiled machine code stored in an Intel `.HEX` format file to emulate microcontroller execution."
+  },
+  {
+    "question": "Which settings option under Arduino IDE Preferences reveals the path to the compiled .HEX file?",
+    "options": [
+      "Show verbose output during: Compilation and Upload",
+      "Enable Code Folding",
+      "Verify code after upload",
+      "Save on verify/upload"
+    ],
+    "answer": 0,
+    "explanation": "Checking 'Compilation and Upload' under Preferences displays the detailed build output log, including the file path to the compiled .HEX file."
+  },
+  {
+    "question": "What is the primary practical advantage of running software simulations in Proteus prior to hardware assembly?",
+    "options": [
+      "It eliminates the need to compile source code",
+      "It saves time, conserves physical resources, and avoids hardware damage",
+      "It increases physical current limits of physical components",
+      "It auto-corrects logical syntax errors in C++"
+    ],
+    "answer": 1,
+    "explanation": "Proteus simulation helps prototype complex projects rapidly, saving physical components from electrical damage during initial trial and error."
+  },
+  {
+    "question": "How should the RX and TX pins of an Arduino Uno be wired to a Proteus Virtual Terminal?",
+    "options": [
+      "Arduino RX to Virtual Terminal RXD, Arduino TX to Virtual Terminal TXD",
+      "Arduino RX to Virtual Terminal TXD, Arduino TX to Virtual Terminal RXD",
+      "Both connected to Virtual Terminal GND",
+      "Both connected to 5V VCC"
+    ],
+    "answer": 1,
+    "explanation": "Serial connections are cross-coupled: the receiver (RX) of one device connects to the transmitter (TXD) of the other, and vice versa."
+  },
+  {
+    "question": "What does the numerical value 9600 represent in Serial.begin(9600);?",
+    "options": [
+      "Operating clock rate of the ATmega microcontroller in kHz",
+      "Baud rate (number of bits transmitted per second)",
+      "Communication buffer size in bytes",
+      "Maximum line length for serial printing"
+    ],
+    "answer": 1,
+    "explanation": "9600 specifies the baud rate—the communication speed defined as bits transmitted per second."
+  },
+  {
+    "question": "What is the key functional difference between Serial.print() and Serial.println()?",
+    "options": [
+      "Serial.print() appends a newline character; Serial.println() does not",
+      "Serial.println() appends a newline character after printing; Serial.print() prints on the same line",
+      "Serial.print() transmits binary; Serial.println() transmits ASCII strings",
+      "Serial.println() works only inside setup()"
+    ],
+    "answer": 1,
+    "explanation": "Serial.print() outputs data without moving the cursor to a new line, whereas Serial.println() appends a carriage return / newline sequence."
+  },
+  {
+    "question": "What does the function evaluation Serial.available() > 0 check for?",
+    "options": [
+      "Whether the serial baud rate matches 9600",
+      "Whether incoming data bytes are available to read in the serial buffer",
+      "Whether the hardware serial port is physically disconnected",
+      "Whether the transmit buffer is completely empty"
+    ],
+    "answer": 1,
+    "explanation": "Serial.available() returns the number of bytes currently received and stored in the serial buffer ready to be read by Serial.read() or Serial.readString()."
+  },
+  {
+    "question": "What is the typical resistance value of internal pull-up resistors inside an Arduino Uno?",
+    "options": [
+      "220 ohms",
+      "1k-ohm",
+      "Around 50k-ohm",
+      "100k-ohm"
+    ],
+    "answer": 2,
+    "explanation": "The internal micro-controller pull-up resistors integrated into the Arduino hardware have a resistance of approximately 50k-ohms."
+  },
+  {
+    "question": "What is the default logic state of a pin configured as pinMode(pin, INPUT_PULLUP) when no external connection/button is activated?",
+    "options": [
+      "LOW (0V)",
+      "HIGH (5V)",
+      "High-Impedance Floating",
+      "0V to 5V AC oscillation"
+    ],
+    "answer": 1,
+    "explanation": "Using INPUT_PULLUP internally ties the pin to +5V through ~50k-ohms, holding the pin in a default HIGH state when nothing else pulls it to ground."
+  },
+  {
+    "question": "When a pushbutton connected between an INPUT_PULLUP pin and Ground is pressed, what logic state does digitalRead() register?",
+    "options": [
+      "HIGH",
+      "LOW",
+      "Undefined",
+      "Analog 1023"
+    ],
+    "answer": 1,
+    "explanation": "Pressing the button connects the input pin directly to Ground (0V), pulling the pin state LOW. This creates an inverted logic scheme (unpressed = HIGH, pressed = LOW)."
+  },
+  {
+    "question": "What underlying physical sensor classification applies to the MQ-2 Gas Sensor?",
+    "options": [
+      "Infrared optical absorption sensor",
+      "Metal Oxide Semiconductor (MOS) type sensor",
+      "Piezoelectric acoustic transducer",
+      "Capacitive polymer sensor"
+    ],
+    "answer": 1,
+    "explanation": "The MQ-2 is a low-cost metal oxide semiconductor (MOS) gas sensor that changes its internal electrical resistance when exposed to target gases."
+  },
+  {
+    "question": "Which set of target gases can be detected by an MQ-2 Gas Sensor module?",
+    "options": [
+      "Pure Nitrogen, Oxygen, Helium, and Argon",
+      "LPG, Methane (CH4), Carbon Monoxide (CO), Alcohol, Smoke (CO2), Hydrogen (H2), and Propane",
+      "Chlorofluorocarbons and Radon gas exclusively",
+      "Carbon Dioxide and Pure Ozone only"
+    ],
+    "answer": 1,
+    "explanation": "The MQ-2 detects a broad range of combustible/combustion gases including LPG, Methane, CO, Alcohol, Smoke, Hydrogen, and Propane in concentrations from 200 to 10000 ppm."
+  },
+  {
+    "question": "What is the effective measurement concentration range of the MQ-2 Gas Sensor?",
+    "options": [
+      "0 to 10 ppm",
+      "200 to 10,000 ppm",
+      "10,000 to 1,000,000 ppm",
+      "1 to 100 ppm"
+    ],
+    "answer": 1,
+    "explanation": "The MQ-2 module is rated to detect target gas concentrations between 200 ppm and 10,000 ppm in the air."
+  },
+  {
+    "question": "How does the MQ-2 gas sensor detect the presence of gas molecules in the surrounding atmosphere?",
+    "options": [
+      "By counting gas ion collisions using a radiation grid",
+      "By measuring changes in electrical resistance of the sensing element using a voltage divider",
+      "By sensing light refraction changes in an optical chamber",
+      "By monitoring thermal expansion of ceramic elements"
+    ],
+    "answer": 1,
+    "explanation": "Gas absorption changes the resistance of the SnO2 sensing element. A voltage divider circuit converts this resistance change into a proportional output voltage."
+  },
+  {
+    "question": "What is the operating voltage range and required power supply for the MQ-2 gas sensor module?",
+    "options": [
+      "3.3V with ±5% tolerance",
+      "5V with ±0.1% tolerance from the Arduino 5V pin",
+      "12V DC external supply line",
+      "9V battery connector directly"
+    ],
+    "answer": 1,
+    "explanation": "The MQ-2 operates on a 5V supply with ±0.1% tolerance, typically powered directly from the 5V power pin of the Arduino board."
+  },
+  {
+    "question": "What triggers the illumination of the onboard Dout LED on the MQ-2 sensor module?",
+    "options": [
+      "Power application to the VCC pin",
+      "When gas concentration reaches or exceeds the threshold set by the potentiometer",
+      "Whenever the analog voltage reaches 0V",
+      "When the pre-heat phase completes"
+    ],
+    "answer": 1,
+    "explanation": "The Power LED indicates board power, while the Dout LED turns ON when the digital threshold (set by the potentiometer) is crossed."
+  },
+  {
+    "question": "Which onboard comparator IC is responsible for digitizing the analog signal on the MQ-2 sensor module?",
+    "options": [
+      "ATmega328P",
+      "LM393 High Precision Comparator OP-Amp",
+      "NE555 Timer IC",
+      "L293D Motor Driver IC"
+    ],
+    "answer": 1,
+    "explanation": "An LM393 High Precision Operational Amplifier acts as a comparator on the MQ-2 module, converting the analog signal into a digital HIGH/LOW output."
+  },
+  {
+    "question": "In Analog Mode, what is the output voltage behavior of pin A0 on the MQ-2 sensor?",
+    "options": [
+      "Constant 5V in clean air, 0V in presence of gas",
+      "0V in clean air, >0V in presence of smoke, and 5V when concentration is ≥10,000 ppm",
+      "5V in clean air, decreasing linearly to 0V at 10,000 ppm",
+      "Fixed 2.5V reference signal"
+    ],
+    "answer": 1,
+    "explanation": "Analog voltage on A0 increases proportionally with gas concentration: 0V in clean air, higher than 0V with smoke, maxing out at 5V for concentrations ≥10000 ppm."
+  },
+  {
+    "question": "In Digital Mode (D0 pin), what logic state is emitted when gas concentration exceeds the potentiometer threshold?",
+    "options": [
+      "HIGH logic level",
+      "LOW logic level",
+      "High-impedance state",
+      "Analog voltage level"
+    ],
+    "answer": 1,
+    "explanation": "When gas levels exceed the threshold, the LM393 comparator outputs a LOW signal on the D0 pin; otherwise, D0 stays HIGH."
+  },
+  {
+    "question": "What internal component keeps the MQ-2 ceramic sensing element at a constant temperature, and how long is required for full thermal equilibrium?",
+    "options": [
+      "Infrared laser heater; 5 seconds",
+      "Electrically powered heating element resistor (H); up to 1.00 hour (minimum 30 mins)",
+      "Peltier cooling module; 10 minutes",
+      "External heating duct; 2 hours"
+    ],
+    "answer": 1,
+    "explanation": "An internal heating element (H) warms the ceramic sensor. Reaching thermal equilibrium requires a pre-heat stabilization time between 30 minutes and 1 hour."
+  },
+  {
+    "question": "What is the definition of 'ppm' in gas concentration measurements?",
+    "options": [
+      "Particles per millimeter",
+      "Parts-per-million (e.g., 2 ppm = 2 out of every 1 million air molecules)",
+      "Pascals per minute",
+      "Pressure per meter"
+    ],
+    "answer": 1,
+    "explanation": "Parts-per-million (ppm) measures gas concentration ratio. 2 ppm means 2 molecules of target gas exist per 1,000,000 air molecules."
+  },
+  {
+    "question": "Which Arduino pins are connected to the SDA and SCL pins of an I2C SSD1306 OLED display on an Arduino Uno?",
+    "options": [
+      "SDA to Pin 2, SCL to Pin 3",
+      "SDA to Analog Pin A4, SCL to Analog Pin A5",
+      "SDA to Digital Pin 0, SCL to Digital Pin 1",
+      "SDA to Pin 10, SCL to Pin 11"
+    ],
+    "answer": 1,
+    "explanation": "On the Arduino Uno hardware layout, I2C data (SDA) is mapped to Analog pin A4, and I2C clock (SCL) is mapped to Analog pin A5."
+  },
+  {
+    "question": "Why is a 10k-ohm resistor placed between the DO pin and VCC on the gas sensor in the procedure circuit?",
+    "options": [
+      "To step down supply voltage from 5V to 3.3V",
+      "To limit current flow and protect components from excessive current",
+      "To filter high-frequency AC noise",
+      "To double the ADC resolution"
+    ],
+    "answer": 1,
+    "explanation": "Resistors introduce a controlled voltage drop to limit current, protecting sensitive components (like indicator LEDs/pins) from high currents."
+  },
+  {
+    "question": "Which specific libraries must be imported into the Arduino IDE for interfacing the SSD1306 OLED display?",
+    "options": [
+      "LiquidCrystal.h and SoftwareSerial.h",
+      "Adafruit_SSD1306.h, Adafruit_GFX.h, and Wire.h / busIO",
+      "SPI.h and Servo.h",
+      "EEPROM.h and Math.h"
+    ],
+    "answer": 1,
+    "explanation": "The OLED driver code relies on `Adafruit_SSD1306.h` for screen-specific commands, `Adafruit_GFX.h` for graphics routines, and `Wire.h` for I2C communication."
+  },
+  {
+    "question": "Which built-in example sketch in the Arduino IDE is used to detect the I2C screen address of a connected OLED display?",
+    "options": [
+      "Blink",
+      "Wire -> i2c_scanner",
+      "DigitalReadSerial",
+      "ReadAnalogVoltage"
+    ],
+    "answer": 1,
+    "explanation": "Running File -> Examples -> Wire -> i2c_scanner probes the I2C bus and prints connected slave device addresses to the Serial Monitor."
+  },
+  {
+    "question": "What is the standard I2C hexadecimal address defined for the 128x32/128x64 OLED display used in the lab code?",
+    "options": [
+      "0x00",
+      "0x3C (or 0x3D)",
+      "0x70",
+      "0xFF"
+    ],
+    "answer": 1,
+    "explanation": "SSD1306 OLED displays typically use I2C hexadecimal slave address `0x3C` (or `0x3D` depending on address pin configuration)."
+  },
+  {
+    "question": "In the provided MQ-2 conversion code, which C++ math functions are called to calculate ppm values using slope and intercept parameters?",
+    "options": [
+      "sin() and cos()",
+      "pow() and log10()",
+      "ceil() and floor()",
+      "sqrt() and abs()"
+    ],
+    "answer": 1,
+    "explanation": "The formula `pow(10, ((log10(ratio)-b)/m))` uses `log10()` and `pow()` to invert logarithmic response curves into gas concentration ppm values."
+  },
+  {
+    "question": "Which utility tool in the Arduino IDE menu is highlighted to display numeric PPM sensor values graphically in real time?",
+    "options": [
+      "Tools -> Serial Monitor",
+      "Tools -> Serial Plotter",
+      "Tools -> Board Manager",
+      "Tools -> Auto-Format"
+    ],
+    "answer": 1,
+    "explanation": "Arduino IDE includes a built-in graphical tool under Tools -> Serial Plotter that graphs numerical stream values sent over Serial."
+  },
+  {
+    "question": "Which display method must be called to render buffered drawing/text data onto the SSD1306 OLED screen?",
+    "options": [
+      "display.print()",
+      "display.display()",
+      "display.show()",
+      "display.update()"
+    ],
+    "answer": 1,
+    "explanation": "Adafruit_SSD1306 uses a display buffer in memory. Calling `display.display()` transfers pixel changes from micro-controller memory onto the physical screen."
+  },
+  {
+    "question": "According to Lab Report Task 2, what light condition should trigger an LED to turn ON when interfaced with an LDR sensor?",
+    "options": [
+      "When light intensity is HIGH",
+      "When light intensity is LOW",
+      "When light intensity is fluctuating continuously",
+      "Only during sunlight hours"
+    ],
+    "answer": 1,
+    "explanation": "Task 2 specifies that the system should detect low ambient light levels using an Light Dependent Resistor (LDR) and automatically turn ON the LED."
+  },
+  {
+    "question": "According to Lab Report Task 3, what unit of measurement should be displayed on the screen when interfacing a SONAR sensor for obstacle distance?",
+    "options": [
+      "Inches",
+      "Meters",
+      "Centimeters",
+      "Feet"
+    ],
+    "answer": 1,
+    "explanation": "Lab Task 3 specifies interfacing an Ultrasonic/SONAR sensor with Arduino to measure distance and output the resulting value in meters."
+  },
+  {
+    "question": "According to Lab Report Task 5, what actuator component should automatically trigger when gas is detected by the sensing system?",
+    "options": [
+      "A motorized exhaust fan to vent fumes",
+      "A high-pressure water pump",
+      "A stepper motor door lock",
+      "A liquid nitrogen cooling valve"
+    ],
+    "answer": 0,
+    "explanation": "Task 5 specifies driving a motorized exhaust fan upon gas detection to keep out gas/fumes."
+  }
+]

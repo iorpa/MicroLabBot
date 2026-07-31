@@ -1,0 +1,398 @@
+[
+  {
+    "question": "What is Arduino mainly used for?",
+    "options": [
+      "Image editing",
+      "Programming microcontrollers",
+      "Database management",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "Arduino is an open-source microcontroller platform used to control hardware."
+  },
+  {
+    "question": "When does the setup() function execute?",
+    "options": [
+      "When Serial Monitor opens",
+      "Every second",
+      "Continuously",
+      "Only once after reset or power-on"
+    ],
+    "answer": 3,
+    "explanation": "The setup() function runs only once when the Arduino is powered on or reset."
+  },
+  {
+    "question": "What happens immediately after setup() finishes?",
+    "options": [
+      "The Arduino turns off",
+      "The Serial Monitor closes",
+      "loop() starts executing repeatedly",
+      "The program stops"
+    ],
+    "answer": 2,
+    "explanation": "After setup() completes, loop() begins and runs continuously."
+  },
+  {
+    "question": "Which function runs only once when the Arduino starts?",
+    "options": [
+      "setup()",
+      "loop()",
+      "main()",
+      "begin()"
+    ],
+    "answer": 0,
+    "explanation": "setup() executes only once after power-up or reset."
+  },
+  {
+    "question": "Which function keeps running repeatedly?",
+    "options": [
+      "repeat()",
+      "loop()",
+      "setup()",
+      "start()"
+    ],
+    "answer": 1,
+    "explanation": "loop() executes continuously."
+  },
+  {
+    "question": "What does pinMode(13, OUTPUT) do?",
+    "options": [
+      "Makes pin 13 an output",
+      "Resets Arduino",
+      "Turns LED on",
+      "Reads pin 13"
+    ],
+    "answer": 0,
+    "explanation": "pinMode() configures the pin direction."
+  },
+  {
+    "question": "Which function turns a digital pin ON?",
+    "options": [
+      "pinMode()",
+      "digitalRead()",
+      "digitalWrite(HIGH)",
+      "analogRead()"
+    ],
+    "answer": 2,
+    "explanation": "digitalWrite(pin, HIGH) outputs HIGH voltage."
+  },
+  {
+    "question": "Which function turns a digital pin OFF?",
+    "options": [
+      "pinMode()",
+      "delay()",
+      "analogWrite()",
+      "digitalWrite(LOW)"
+    ],
+    "answer": 3,
+    "explanation": "LOW sets the output to 0V."
+  },
+  {
+    "question": "What does delay(1000) mean?",
+    "options": [
+      "1000 milliseconds",
+      "1000 seconds",
+      "100 milliseconds",
+      "1 microsecond"
+    ],
+    "answer": 0,
+    "explanation": "1000 milliseconds equals 1 second."
+  },
+  {
+    "question": "void loop() {\n  digitalWrite(13, HIGH); // turn the LED on (HIGH is the voltage level)\n  delay(1000); // wait for a second\n  digitalWrite(13, LOW); // turn the LED off by making the voltage LOW\n  delay(1000); // wait for a second\n}\nWhich pin controls the built-in LED in the example?",
+    "options": [
+      "13",
+      "12",
+      "11",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "The built-in LED is connected to digital pin 13."
+  },
+  {
+    "question": "Which LED leg is positive?",
+    "options": [
+      "Short leg",
+      "Long leg",
+      "Black wire",
+      "Flat edge"
+    ],
+    "answer": 1,
+    "explanation": "The longer leg is the anode (positive). \nPositive :Long leg\nsmaller component inside led\nrounded edge"
+  },
+  {
+    "question": "Which LED leg is negative?",
+    "options": [
+      "Short leg",
+      "Red wire",
+      "Rounded edge",
+      "Long leg"
+    ],
+    "answer": 0,
+    "explanation": "The shorter leg is the cathode (negative).\nNegative :\nShort leg\nBigger component inside led\nFlat edge"
+  },
+  {
+    "question": "Which LED edge indicates the negative terminal?",
+    "options": [
+      "Blue edge",
+      "Sharp edge",
+      "Rounded edge",
+      "Flat edge"
+    ],
+    "answer": 3,
+    "explanation": "The flat side marks the cathode."
+  },
+  {
+    "question": "Why is a resistor connected with an LED?",
+    "options": [
+      "Increase brightness",
+      "Increase voltage",
+      "Control current",
+      "Store energy"
+    ],
+    "answer": 2,
+    "explanation": "The resistor limits current to protect the LED."
+  },
+  {
+    "question": "What is the correct connection?",
+    "options": [
+      "Pin → Resistor → LED → GND",
+      "GND → Pin → LED",
+      "Pin → LED → Resistor → GND",
+      "LED → Pin → GND"
+    ],
+    "answer": 0,
+    "explanation": "The resistor should be in series with the LED.\n pin → resistor → led long leg →led short leg → GND"
+  },
+  {
+    "question": "What is the Serial Monitor in Arduino?",
+    "options": [
+      "An operating system",
+      "A hardware sensor",
+      "A built-in tool in the Arduino IDE",
+      "A programming language"
+    ],
+    "answer": 2,
+    "explanation": "The Serial Monitor is a built-in tool in the Arduino IDE."
+  },
+  {
+    "question": "What does the Serial Monitor allow you to do?",
+    "options": [
+      "Only receive text data",
+      "Upload sketches to Arduino",
+      "Only send text data",
+      "Send and receive text data between the computer and Arduino"
+    ],
+    "answer": 3,
+    "explanation": "The Serial Monitor allows two-way communication by sending and receiving text data."
+  },
+  {
+    "question": "Which connection is used for communication between the computer and Arduino through the Serial Monitor?",
+    "options": [
+      "Ethernet",
+      "Wi-Fi",
+      "USB (Serial) connection",
+      "Bluetooth"
+    ],
+    "answer": 2,
+    "explanation": "The Serial Monitor communicates through the USB (serial) connection."
+  },
+  {
+    "question": "What is the Serial Monitor generally used for?",
+    "options": [
+      "Programming the Arduino",
+      "Debugging programs",
+      "Designing circuits",
+      "Powering the Arduino"
+    ],
+    "answer": 1,
+    "explanation": "The Serial Monitor is generally used for debugging Arduino programs."
+  },
+  {
+    "question": "How long does delay(2000) wait?",
+    "options": [
+      "20 seconds",
+      "1 second",
+      "2 seconds",
+      "200 milliseconds"
+    ],
+    "answer": 2,
+    "explanation": "2000 ms equals 2 seconds."
+  },
+  {
+    "question": "Which function starts serial communication?",
+    "options": [
+      "Serial.begin()",
+      "Serial.print()",
+      "Serial.available()",
+      "Serial.read()"
+    ],
+    "answer": 0,
+    "explanation": "Serial.begin() initializes serial communication."
+  },
+  {
+    "question": "What baud rate is used in the lab for arduino?",
+    "options": [
+      "4800",
+      "115200",
+      "19200",
+      "9600"
+    ],
+    "answer": 3,
+    "explanation": "The examples use Serial.begin(9600)."
+  },
+  {
+    "question": "What is baud rate?",
+    "options": [
+      "CPU speed",
+      "Bits transmitted per second",
+      "Voltage level",
+      "Memory size"
+    ],
+    "answer": 1,
+    "explanation": "Baud rate determines communication speed."
+  },
+  {
+    "question": "Which function prints text and moves to the next line?",
+    "options": [
+      "Serial.begin()",
+      "Serial.println()",
+      "Serial.print()",
+      "Serial.read()"
+    ],
+    "answer": 1,
+    "explanation": "println() prints a newline after the text."
+  },
+  {
+    "question": "Which function prints text on the same line?",
+    "options": [
+      "Serial.println()",
+      "Serial.begin()",
+      "Serial.readString()",
+      "Serial.print()"
+    ],
+    "answer": 3,
+    "explanation": "print() does not add a newline."
+  },
+  {
+    "question": "Which function checks if serial data is available?",
+    "options": [
+      "Serial.available()",
+      "Serial.begin()",
+      "Serial.print()",
+      "Serial.read()"
+    ],
+    "answer": 0,
+    "explanation": "Serial.available() returns the number of bytes available."
+  },
+  {
+    "question": "Which function reads a string from the Serial Monitor?",
+    "options": [
+      "Serial.begin()",
+      "Serial.println()",
+      "Serial.write()",
+      "Serial.readString()"
+    ],
+    "answer": 3,
+    "explanation": "Serial.readString() reads the received text."
+  },
+  {
+    "question": "Which tool in Arduino IDE is mainly used for debugging?",
+    "options": [
+      "Board Manager",
+      "Serial Monitor",
+      "Serial Plotter",
+      "Library Manager"
+    ],
+    "answer": 1,
+    "explanation": "The Serial Monitor displays messages and accepts user input."
+  },
+  {
+    "question": "What does Serial.println(\"Hello\") do?",
+    "options": [
+      "Turns on LED",
+      "Stops the program",
+      "Prints Hello on a new line",
+      "Reads input"
+    ],
+    "answer": 2,
+    "explanation": "println() outputs text followed by a newline."
+  },
+  {
+    "question": "How often does loop() execute?",
+    "options": [
+      "Continuously",
+      "Every minute",
+      "Twice",
+      "Once"
+    ],
+    "answer": 0,
+    "explanation": "loop() repeats forever."
+  },
+  {
+    "question": "Which keyword is used for comments in Arduino?",
+    "options": [
+      "/*/",
+      "##",
+      "//",
+      "<!--"
+    ],
+    "answer": 2,
+    "explanation": "Single-line comments begin with //."
+  },
+  {
+    "question": "Arduino is mainly a ____.",
+    "options": [
+      "Spreadsheet",
+      "Web browser",
+      "Database",
+      "Microcontroller platform"
+    ],
+    "answer": 3,
+    "explanation": "Arduino is an open-source microcontroller platform."
+  },
+  {
+    "question": "Which value turns an LED ON?",
+    "options": [
+      "FALSE",
+      "HIGH",
+      "LOW",
+      "OFF"
+    ],
+    "answer": 1,
+    "explanation": "HIGH applies the output voltage."
+  },
+  {
+    "question": "What does OUTPUT mean in pinMode()?",
+    "options": [
+      "Read data",
+      "Increase voltage",
+      "Send signals",
+      "Store memory"
+    ],
+    "answer": 2,
+    "explanation": "OUTPUT configures the pin to send signals."
+  },
+  {
+    "question": "If you want the LED ON for 2 seconds and OFF for 1 second, which delays should be used?",
+    "options": [
+      "delay(2000), delay(1000)",
+      "delay(500), delay(500)",
+      "delay(1000), delay(1000)",
+      "delay(3000), delay(3000)"
+    ],
+    "answer": 0,
+    "explanation": "2000 ms = 2 seconds, 1000 ms = 1 second."
+  },
+  {
+    "question": "Which statement is true about Serial Monitor?",
+    "options": [
+      "It cannot communicate with Arduino",
+      "It only sends data",
+      "It can both send and receive data",
+      "It only receives data"
+    ],
+    "answer": 2,
+    "explanation": "The Serial Monitor supports two-way communication."
+  }
+]

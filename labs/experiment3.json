@@ -1,0 +1,541 @@
+[
+  {
+    "question": "What is the primary objective of Experiment 2(lab 3)?",
+    "options": [
+      "To program an Arduino Uno for standalone serial communication without wireless capabilities",
+      "To setup an ESP32 board to build IoT-based systems using XAMPP local server and Arduino Cloud IoT",
+      "To build an offline motor driver controller using an ATmega328P microcontroller",
+      "To interface a Bluetooth module with a Raspberry Pi for local data logging"
+    ],
+    "answer": 1,
+    "explanation": "The lab focuses on setting up an ESP32 board for IoT systems by transmitting sensor data to a local XAMPP database server and the Arduino Cloud IoT platform."
+  },
+  {
+    "question": "Which set of hardware components is required for completing Experiment 'Wifi Communication and building IoT-based systemsUsing XAMPP and ESP32?'",
+    "options": [
+      "Arduino Uno, L293D Motor Driver, DC Motor, Pushbutton, 220 ohm Resistor",
+      "ESP32 Dev Board, LED, DHT11, MQ-2 Gas Sensor, Breadboard, Jumper wires, 10k ohm Resistor",
+      "Raspberry Pi 4, OLED Display, Ultrasonic Sensor, Relay Module, Buzzer",
+      "STM32 Nucleo Board, LDR Light Sensor, Servo Motor, 1k ohm Resistor"
+    ],
+    "answer": 1,
+    "explanation": "The hardware list in the document specifies: ESP-32 Development Board, LED, DHT11, MQ-2 Gas Sensor, Breadboard, Jumper wires, and a 10k ohm Resistor."
+  },
+  {
+    "question": "Which software tools are explicitly required for the execution of Experiment 'Wifi Communication and building IoT-based systems Using XAMPP and ESP32?'",
+    "options": [
+      "Proteus 8 Professional and MATLAB",
+      "XAMPP and Arduino Cloud IoT",
+      "LabVIEW and Packet Tracer",
+      "Wireshark and Eclipse IDE"
+    ],
+    "answer": 1,
+    "explanation": "The software requirements explicitly name XAMPP (for local server, MySQL/MariaDB database, and PHP) and Arduino Cloud IoT platform."
+  },
+  {
+    "question": "What fundamental hardware architecture classification applies to the ESP32?",
+    "options": [
+      "Complex Instruction Set Computer (CISC) microprocessor",
+      "System on a Chip (SoC)",
+      "Dedicated Field Programmable Gate Array (FPGA)",
+      "Standalone Digital Signal Processor (DSP)"
+    ],
+    "answer": 1,
+    "explanation": "The theory section defines the ESP32 as a widely-used System on a Chip (SoC) that plays a key role in developing IoT devices."
+  },
+  {
+    "question": "Which built-in wireless communication protocols are natively integrated into the ESP32 SoC?",
+    "options": [
+      "Zigbee and LoRaWAN",
+      "WiFi and Bluetooth",
+      "NFC and RFID",
+      "Sub-1GHz RF and Cellular LTE"
+    ],
+    "answer": 1,
+    "explanation": "The ESP32 comes equipped with both WiFi and Bluetooth capabilities for transmitting data over networks."
+  },
+  {
+    "question": "How many processing cores are integrated within the ESP32 SoC, and what primary operational advantage do they provide?",
+    "options": [
+      "Single core; minimized thermal output",
+      "Dual cores; multitasking and fast parallel processing for real-time applications",
+      "Quad cores; direct graphics rendering capabilities",
+      "Octa cores; quantum cryptographic execution"
+    ],
+    "answer": 1,
+    "explanation": "With two processing cores (dual-core), the ESP32 enables multitasking and fast parallel execution for real-time embedded and IoT applications."
+  },
+  {
+    "question": "What are the exact RAM and SPIFFS flash storage capacities of the ESP32 as specified in the theory?",
+    "options": [
+      "256 KB RAM and 512 KB SPIFFS",
+      "520 KB RAM and 1.5 MB SPIFFS storage",
+      "2 MB RAM and 16 MB SPIFFS",
+      "128 KB RAM and 1 MB SPIFFS"
+    ],
+    "answer": 1,
+    "explanation": "The document specifies that the ESP32 boasts 520 KB of RAM and 1.5 MB of SPIFFS storage for managing files on external flash memory."
+  },
+  {
+    "question": "How many total Analog-to-Digital Converter (ADC) channels and PWM output channels are available on the ESP32 peripherals?",
+    "options": [
+      "6 ADC channels and 8 PWM output channels",
+      "18 ADC channels and 16 PWM output channels",
+      "10 ADC channels and 12 PWM output channels",
+      "24 ADC channels and 32 PWM output channels"
+    ],
+    "answer": 1,
+    "explanation": "ESP32 peripheral specs state: 18 Analog-to-Digital Converter (ADC) channels and 16 Pulse-Width Modulation (PWM) output channels."
+  },
+  {
+    "question": "Which peripheral communication features on the ESP32 are static (assigned to specific fixed pins) versus codewise assignable?",
+    "options": [
+      "UART, I2C, and SPI are static; ADC and DAC are assignable by code",
+      "ADC and DAC are associated with specific static pins; UART, I2C, SPI, and PWM are assignable independently by code",
+      "All peripheral pins on the ESP32 are strictly static and non-reassignable",
+      "Capacitive touch GPIOs are static; all other peripherals are non-assignable"
+    ],
+    "answer": 1,
+    "explanation": "ADC and DAC features are tied to specific static pins, whereas UART, I2C, SPI, and PWM can be assigned independently via code."
+  },
+  {
+    "question": "How many Capacitive Sensing GPIOs and DAC channels are integrated into the ESP32 peripherals?",
+    "options": [
+      "5 Capacitive Sensing GPIOs and 1 DAC channel",
+      "10 Capacitive Sensing GPIOs and 2 DAC channels",
+      "16 Capacitive Sensing GPIOs and 4 DAC channels",
+      "8 Capacitive Sensing GPIOs and 2 DAC channels"
+    ],
+    "answer": 1,
+    "explanation": "According to the peripheral list, the ESP32 features 10 Capacitive sensing GPIOs and 2 Digital-to-Analog Converters (DAC)."
+  },
+  {
+    "question": "In the initial DHT11 reading sketch, which GPIO pin of the ESP32 is defined as `DHTPIN`?",
+    "options": [
+      "GPIO 2 (D2)",
+      "GPIO 19 (D19)",
+      "GPIO 4 (D4)",
+      "GPIO 23 (D23)"
+    ],
+    "answer": 1,
+    "explanation": "The Arduino code explicitly defines `#define DHTPIN 19` (digital pin 19 / D19) to connect to the DHT11 data pin."
+  },
+  {
+    "question": "Which specific third-party library vendor must be chosen when installing the DHT library in Arduino IDE for this lab?",
+    "options": [
+      "SparkFun",
+      "Adafruit",
+      "DFRobot",
+      "Seeed Studio"
+    ],
+    "answer": 1,
+    "explanation": "The lab procedure explicitly states: 'Many libraries will show in the search results. However, install the one given by Adafruit.'"
+  },
+  {
+    "question": "What hardware button combination on the ESP32 board should be pressed if code uploading fails or hangs at the connecting phase?",
+    "options": [
+      "Press and hold the EN button only",
+      "Press and hold the BOOT button, press the EN button, then click upload in Arduino IDE while holding BOOT",
+      "Double tap the EN button rapidly while disconnecting USB power",
+      "Short pin 19 directly to ground while pressing BOOT"
+    ],
+    "answer": 1,
+    "explanation": "If code uploading fails, press and hold the BOOT button and press the EN button on the ESP32, then trigger upload while continuing to hold BOOT until flashing completes."
+  },
+  {
+    "question": "What custom C++ function name is created in the DHT11 sketch to read sensor values and store them in global variables?",
+    "options": [
+      "readSensorValues()",
+      "Load_DHT11_Data()",
+      "getTemperatureAndHumidity()",
+      "fetchData()"
+    ],
+    "answer": 1,
+    "explanation": "The sketch defines and calls `void Load_DHT11_Data()` inside `loop()` to update the `temperature` and `humidity` integer variables."
+  },
+  {
+    "question": "In C++/Arduino code, what function check is evaluated inside `Load_DHT11_Data()` to verify if reading from the DHT11 sensor failed?",
+    "options": [
+      "if (temperature == NULL || humidity == NULL)",
+      "if (isnan(temperature) || isnan(humidity))",
+      "if (temperature < 0 && humidity < 0)",
+      "if (dht11.status() == false)"
+    ],
+    "answer": 1,
+    "explanation": "`isnan()` (Is Not a Number) evaluates whether reading the float/int returned a valid number. If true, it prints 'Failed to read from DHT sensor!' and zeroes the variables."
+  },
+  {
+    "question": "What baud rate is passed to `Serial.begin()` in the provided ESP32 source code examples?",
+    "options": [
+      "9600",
+      "57600",
+      "115200",
+      "38400"
+    ],
+    "answer": 2,
+    "explanation": "The ESP32 setup function sets serial communication speed via `Serial.begin(115200);`."
+  },
+  {
+    "question": "What each letter stands for in the acronym 'XAMPP'?",
+    "options": [
+      "X=Cross-Platform, A=Apache, M=MySQL, P=PHP, P=Perl",
+      "X=eXtra, A=Admin, M=MariaDB, P=Python, P=PostgreSQL",
+      "X=XML, A=Apache, M=MongoDB, P=PHP, P=Python",
+      "X=Cross-Platform, A=Asynchronous, M=Memory, P=PHP, P=Perl"
+    ],
+    "answer": 0,
+    "explanation": "XAMPP stands for X (Cross-Platform), A (Apache), M (MySQL/MariaDB), P (PHP), and P (Perl)."
+  },
+  {
+    "question": "What is the specific operational function of the Apache module inside the XAMPP stack?",
+    "options": [
+      "It manages relational tables and runs SQL queries",
+      "It is the web server software that takes requests from browsers and returns web pages",
+      "It compiles C++ code into binary execute files",
+      "It converts analog sensor inputs into digital data streams"
+    ],
+    "answer": 1,
+    "explanation": "Apache acts as the local web server software. It handles requests coming from user web browsers or HTTP clients (like ESP32) and serves web content back."
+  },
+  {
+    "question": "What software component in XAMPP acts as the relational database management system to store and query website data?",
+    "options": [
+      "Apache",
+      "MySQL / MariaDB",
+      "PHP",
+      "Perl"
+    ],
+    "answer": 1,
+    "explanation": "MySQL (or MariaDB in modern XAMPP builds) is the database management system used to store and manage structured data tables."
+  },
+  {
+    "question": "What is the core role of PHP in the XAMPP software environment?",
+    "options": [
+      "It is a web browser rendering engine",
+      "It is a server-side scripting language used to create dynamic web pages and execute database operations",
+      "It serves as a low-level USB driver for microcontroller flashing",
+      "It manages operating system network firewalls"
+    ],
+    "answer": 1,
+    "explanation": "PHP is a server-side scripting language that processes incoming requests, interacts with MySQL databases, and dynamically generates HTML content."
+  },
+  {
+    "question": "Which executable file must be launched inside the `C:\\xampp` directory to start Apache and MySQL services?",
+    "options": [
+      "xampp_start.exe",
+      "xampp-control.exe",
+      "apache_mysql_run.exe",
+      "phpmyadmin.exe"
+    ],
+    "answer": 1,
+    "explanation": "Users navigate to the XAMPP installation directory (e.g., `C:\\xampp`) and double-click `xampp-control.exe` to open the Control Panel."
+  },
+  {
+    "question": "What default URL must be entered into a local web browser to confirm that XAMPP is properly installed and running?",
+    "options": [
+      "http://127.0.0.2/xampp",
+      "localhost",
+      "http://0.0.0.0:8080",
+      "http://xampp.server.local"
+    ],
+    "answer": 1,
+    "explanation": "Typing `localhost` into the browser address bar loads the default XAMPP welcome web page, confirming correct installation."
+  },
+  {
+    "question": "What are the default administrative credential values for logging into phpMyAdmin in a fresh XAMPP installation?",
+    "options": [
+      "Username: 'admin', Password: 'admin'",
+      "Username: 'root', Password: (no default password / blank)",
+      "Username: 'system', Password: 'password123'",
+      "Username: 'phpmyadmin', Password: 'root'"
+    ],
+    "answer": 1,
+    "explanation": "By default, phpMyAdmin uses the database username 'root' with an empty/blank password."
+  },
+  {
+    "question": "What 4 specific columns are created in the database table for tracking DHT11 sensor readings in Step 3 of the database setup?",
+    "options": [
+      "Sensor_Name, Temp_Val, Hum_Val, Location",
+      "ID, temperature, humidity, Datetime",
+      "Entry_Num, Celsius, Percent, Status",
+      "Serial_No, Data1, Data2, Time_Logged"
+    ],
+    "answer": 1,
+    "explanation": "To keep track of readings, the lab creates a 4-column table containing: 'ID' (serial number), 'temperature', 'humidity', and 'Datetime' (timestamp)."
+  },
+  {
+    "question": "Which SQL statement is used in Step 4 to manually test inserting fake test data into the created table?",
+    "options": [
+      "ADD ENTRY TO table_name VALUES (10, 20)",
+      "INSERT INTO your_table_name(temperature, humidity) VALUES (10, 20)",
+      "UPDATE table_name SET temperature=10, humidity=20",
+      "CREATE RECORD (10, 20) INTO table_name"
+    ],
+    "answer": 1,
+    "explanation": "The test query specified is: `INSERT INTO your_table_name(temperature, humidity) VALUES (10, 20)`."
+  },
+  {
+    "question": "In which exact subdirectory path inside the XAMPP installation directory must custom PHP project folders be created?",
+    "options": [
+      "C:\\xampp\\apache\\www",
+      "C:\\xampp\\htdocs",
+      "C:\\xampp\\php\\projects",
+      "C:\\xampp\\mysql\\data"
+    ],
+    "answer": 1,
+    "explanation": "All local web projects and scripts must be placed inside the `htdocs` directory (e.g., `C:\\xampp\\htdocs`)."
+  },
+  {
+    "question": "What opening and closing tags are required to write PHP code blocks inside a file?",
+    "options": [
+      "<script php> ... </script>",
+      "<?php ... ?>",
+      "<% php ... %>",
+      "<!-- php ... -->"
+    ],
+    "answer": 1,
+    "explanation": "PHP scripts begin with `<?php` and end with `?>`."
+  },
+  {
+    "question": "Which PHP statement keyword is used to print text strings or dynamic HTML onto a webpage output?",
+    "options": [
+      "print_string",
+      "echo",
+      "console.log",
+      "write"
+    ],
+    "answer": 1,
+    "explanation": "The `echo` keyword in PHP is used to print messages or generate HTML output onto the browser page."
+  },
+  {
+    "question": "Which native PHP function is called to connect to a MySQL/MariaDB database server using host, username, password, and database parameters?",
+    "options": [
+      "mysql_open_db()",
+      "mysqli_connect()",
+      "pdo_establish_connection()",
+      "connect_mysql_server()"
+    ],
+    "answer": 1,
+    "explanation": "The function `mysqli_connect($hostname, $username, $password, $database)` establishes a connection to the MySQL server."
+  },
+  {
+    "question": "What error-handling structure is used in PHP to stop script execution and display an error message if `mysqli_connect()` fails?",
+    "options": [
+      "try { ... } catch (Exception $e)",
+      "if (!$conn) { die(\"Connection failed: \" . mysqli_connect_error()); }",
+      "while (connection_status() != OK) { exit(); }",
+      "if ($conn == 0) { return false; }"
+    ],
+    "answer": 1,
+    "explanation": "The PHP script uses `if (!$conn) { die(\"Connection failed: \" . mysqli_connect_error()); }` to abort execution if connection fails."
+  },
+  {
+    "question": "Which PHP function is used to send and execute an SQL query string against an active database connection handle?",
+    "options": [
+      "mysqli_query($conn, $sql)",
+      "execute_sql($conn, $sql)",
+      "db_send_query($sql)",
+      "mysqli_execute_statement($conn, $sql)"
+    ],
+    "answer": 0,
+    "explanation": "`mysqli_query($conn, $sql)` executes the provided SQL query string against the MySQL connection `$conn`."
+  },
+  {
+    "question": "What command line tool and utility command are used on Windows operating systems to find the local computer IPv4 address for ESP32 configuration?",
+    "options": [
+      "PowerShell using `netstat -a`",
+      "Command Prompt (cmd) using `ipconfig`",
+      "Terminal using `ifconfig /all`",
+      "Network Shell using `netsh wlan show`"
+    ],
+    "answer": 1,
+    "explanation": "Opening Command Prompt (`cmd`) and typing `ipconfig` displays network details, including the local IPv4 Address."
+  },
+  {
+    "question": "Which specific C++ libraries are included in the ESP32 sketch to establish WiFi connection and send HTTP POST requests?",
+    "options": [
+      "#include <ESP32WiFi.h> and #include <WebClient.h>",
+      "#include <WiFi.h> and #include <HTTPClient.h>",
+      "#include <WiFiClient.h> and #include <Ethernet.h>",
+      "#include <ESPAsyncWebServer.h> and #include <SPIFFS.h>"
+    ],
+    "answer": 1,
+    "explanation": "The sketch explicitly includes `#include <WiFi.h>` for network management and `#include <HTTPClient.h>` for HTTP POST communication."
+  },
+  {
+    "question": "How is the target server `URL` string formatted inside the ESP32 C++ code?",
+    "options": [
+      "\"ftp://computer_ip/project_folder/project_file.php\"",
+      "\"http://computer_ip/project_folder/project_file.php\"",
+      "\"https://localhost/project_folder/project_file.php\"",
+      "\"http://127.0.0.1/project_folder/project_file.php\""
+    ],
+    "answer": 1,
+    "explanation": "The URL format must point to the IPv4 address of the computer on the local network: `\"http://computer_ip/project_folder/project_file.php\"`. (Using 'localhost' or '127.0.0.1' on the ESP32 would refer to the ESP32 itself, not the computer)."
+  },
+  {
+    "question": "In the ESP32 code, what WiFi mode configuration command is executed inside `connectWiFi()` to operate the ESP32 as a WiFi client rather than an access point?",
+    "options": [
+      "WiFi.mode(WIFI_AP);",
+      "WiFi.mode(WIFI_STA);",
+      "WiFi.mode(WIFI_AP_STA);",
+      "WiFi.mode(WIFI_CLIENT_ONLY);"
+    ],
+    "answer": 1,
+    "explanation": "`WiFi.mode(WIFI_STA);` sets the station mode, hiding the ESP32 as an AP hotspot and allowing it to connect to an existing local WiFi network."
+  },
+{
+  "question": "What is the exact key-value string formatting requirement used in `postData` when encoding sensor parameters for an HTTP POST request?",
+  "options": [
+    "\"temperature:\" + String(temperature) + \", humidity:\" + String(humidity)",
+    "\"temperature=\" + String(temperature) + \"&humidity=\" + String(humidity)",
+    "\"\" + String(temperature) + \"\" + String(humidity)",
+    "\"{\"temperature\": \" + String(temperature) + \",\"humidity\":\" + String(humidity) + \"}\""
+  ],
+  "answer": 1,
+  "explanation": "The POST data string uses standard URL-encoded key-value formatting: `\"temperature=\" + String(temperature) + \"&humidity=\" + String(humidity)`."
+},
+  {
+    "question": "Which header specification must be set on the `HTTPClient` instance before posting URL-encoded form data from the ESP32?",
+    "options": [
+      "http.addHeader(\"Content-Type\", \"text/plain\");",
+      "http.addHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");",
+      "http.addHeader(\"Content-Type\", \"application/json\");",
+      "http.addHeader(\"Content-Type\", \"multipart/form-data\");"
+    ],
+    "answer": 1,
+    "explanation": "The code requires `http.addHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");` so the PHP backend can parse standard `$_POST` variables."
+  },
+  {
+    "question": "In PHP, which superglobal array is accessed to retrieve the posted values sent from the ESP32 HTTP POST request?",
+    "options": [
+      "$_GET",
+      "$_POST",
+      "$_REQUEST_DATA",
+      "$_SERVER"
+    ],
+    "answer": 1,
+    "explanation": "Parameters sent via HTTP POST are accessed in PHP using the superglobal array `$_POST[\"key_name\"]` (e.g., `$_POST[\"temperature\"]`)."
+  },
+  {
+    "question": "Which PHP conditional function is used in `testdata.php` to verify that incoming POST variables actually exist before attempting to save them to MySQL?",
+    "options": [
+      "empty()",
+      "isset()",
+      "is_null()",
+      "check_post()"
+    ],
+    "answer": 1,
+    "explanation": "`if(isset($_POST[\"temperature\"]) && isset($_POST[\"humidity\"]))` checks if both keys exist in the HTTP POST request."
+  },
+  {
+    "question": "What HTTP status response code is returned by the local server when an HTTP POST request is successfully received and processed?",
+    "options": [
+      "404",
+      "500",
+      "200",
+      "302"
+    ],
+    "answer": 2,
+    "explanation": "The documentation notes that a successful HTTP POST request to the server returns the HTTP response status code `200`."
+  },
+  {
+    "question": "What method on the `HTTPClient` object `http` is called to retrieve the body response text returned from the PHP server script?",
+    "options": [
+      "http.getResponse()",
+      "http.getString()",
+      "http.readBody()",
+      "http.getPayloadText()"
+    ],
+    "answer": 1,
+    "explanation": "`String payload = http.getString();` reads and returns the response string body (payload) sent back by the server."
+  },
+  {
+    "question": "In the Arduino Cloud IoT platform integration (Part ii), what two virtual variables are created under the virtual 'Thing'?",
+    "options": [
+      "Temp_celsius and Hum_percent",
+      "Gas_ppm and LED",
+      "Smoke_level and Buzzer_state",
+      "Air_quality and Fan_control"
+    ],
+    "answer": 1,
+    "explanation": "The objectives define creating a virtual 'Thing' on the Arduino Cloud IoT platform linked to the ESP32 with defined variables named `Gas_ppm` and `LED`."
+  },
+  {
+    "question": "How long is the delay loop setting at the end of each sensor transmission iteration in the main ESP32 loop?",
+    "options": [
+      "1000 ms (1 second)",
+      "5000 ms (5 seconds)",
+      "10000 ms (10 seconds)",
+      "500 ms (0.5 seconds)"
+    ],
+    "answer": 1,
+    "explanation": "At the conclusion of the `loop()` function, the code executes `delay(5000);` to send data every 5 seconds."
+  },
+  {
+    "question": "Which specific physical gas sensor module is designated for smoke/gas monitoring in Part ii of the experiment?",
+    "options": [
+      "MQ-7 Carbon Monoxide Sensor",
+      "MQ-2 Gas Sensor",
+      "MQ-135 Air Quality Sensor",
+      "DHT22 Environmental Sensor"
+    ],
+    "answer": 1,
+    "explanation": "The hardware list and objectives explicitly select the MQ-2 Gas Sensor for gas/smoke detection."
+  },
+  {
+    "question": "In XAMPP architecture, if a user accesses a website, which component retrieves raw data from MySQL and formats dynamic HTML content?",
+    "options": [
+      "Apache",
+      "PHP",
+      "MariaDB",
+      "Perl"
+    ],
+    "answer": 1,
+    "explanation": "As detailed in the theory: 'PHP retrieves the blog post/data from MySQL, formats it, and generates the HTML to be displayed.'"
+  },
+  {
+    "question": "Which resistor value is included in the required component list for pulling up or current limiting in the hardware setups?",
+    "options": [
+      "220 ohm",
+      "1k ohm",
+      "10k ohm",
+      "100k ohm"
+    ],
+    "answer": 2,
+    "explanation": "Item 7 in the required hardware list specifies a '10k ohm Resistor'."
+  },
+  {
+    "question": "What does calling `WiFi.status() != WL_CONNECTED` in the ESP32 `loop()` function trigger?",
+    "options": [
+      "Board software reset",
+      "Immediate call to `connectWiFi()` to attempt network reconnection",
+      "Flashing of the onboard LED in red error mode",
+      "Halting sensor reading tasks permanently"
+    ],
+    "answer": 1,
+    "explanation": "Inside `loop()`, checking `if(WiFi.status() != WL_CONNECTED)` detects lost connections and calls `connectWiFi()` to re-establish the link."
+  },
+  {
+    "question": "What primary advantage does XAMPP offer developers when building and testing IoT web platforms?",
+    "options": [
+      "It provides cloud-based global DNS routing automatically",
+      "It allows developers to create and test full-stack web/database applications locally on their computer before deploying live",
+      "It compiles ESP32 C++ code without requiring Arduino IDE",
+      "It encrypts hardware serial data streams using SSL"
+    ],
+    "answer": 1,
+    "explanation": "XAMPP acts as a local test server, enabling full development and database testing on a local machine prior to live deployment."
+  },
+  {
+    "question": "According to the experiment outcomes, what key database skill is gained by setting up the PHP script and XAMPP backend?",
+    "options": [
+      "Advanced distributed graph database clustering",
+      "Basic understanding of how databases work using PHP and SQL query operations",
+      "Hardware-level EEPROM flash wear leveling",
+      "Quantum cryptographic database indexing"
+    ],
+    "answer": 1,
+    "explanation": "The final outcomes highlight: 'Get a basic understanding of how databases work using PHP' alongside managing tables via MySQL."
+  }
+]
