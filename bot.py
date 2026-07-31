@@ -21,7 +21,7 @@ from telegram.ext import (
 # BOT TOKEN
 # ===============================
 
-TOKEN = "8325606127:AAEp1QXCQPdKY8FsI65bYgwvkZGhEdv9LDY"
+TOKEN = TOKEN = os.getenv("BOT_TOKEN")
 
 
 # ===============================
